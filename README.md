@@ -30,7 +30,7 @@ Este projeto é uma aplicação fullstack de gerenciamento de tarefas, utilizand
 1. Clone o repositório:
    ```bash
    git clone <URL-do-repositório>
-   cd backend
+   cd backend/src/projetostack
     ```
 ## 2. Instale as dependências:
 
@@ -41,7 +41,6 @@ npm install
 
 ```bash
 DATABASE_URL=postgresql://<usuario>:<senha>@localhost:5432/<nome-do-banco>?schema=public
-JWT_SECRET=seu-segredo-aqui
  ```
 
 ## 4. Execute as migrações do Prisma:
@@ -59,7 +58,7 @@ npm run start:dev
 Navegue até o diretório do frontend:
 
 ```bash
-cd frontend
+cd /desafiofullstack
  ```
 
 ## 2. Instale as dependências:
@@ -78,7 +77,11 @@ VITE_API_URL=http://localhost:3000
 ```bash
 npm run dev
  ```
+## 4. Inicie o Docker:
 
+```bash
+docker compose up -d
+ ```
 ### 3. Testando a Aplicação
 
 ## 1. Acesse o backend via Swagger:
