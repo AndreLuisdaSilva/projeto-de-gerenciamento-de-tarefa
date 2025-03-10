@@ -143,10 +143,6 @@ backend/src/projetostack/
 
 Frontend
 ```bash
-Claro, vamos analisar a estrutura de pastas e arquivos desse projeto, que parece ser um projeto React com TypeScript e Vite.
-
-Estrutura Completa de Pastas e Arquivos:
-
 src/
 ├── assets/             # Recursos estáticos (imagens, ícones, etc.)
 ├── components/         # Componentes reutilizáveis
