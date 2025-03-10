@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projeto de Gerenciamento de Tarefas
 
 Este projeto é uma aplicação fullstack de gerenciamento de tarefas, utilizando **NestJS** no backend e **React** no frontend. O sistema permite que os usuários criem, leiam, atualizem e excluam tarefas, além de gerenciar a autenticação de usuários com **JWT**.
