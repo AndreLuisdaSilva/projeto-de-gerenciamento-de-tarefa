@@ -97,23 +97,80 @@ Autenticação baseada em token: Os endpoints exigem um token de autenticação 
 Estrutura do Projeto
 Backend
 ```bash
-src/
-├── auth/            # Lógica de autenticação (JWT)
-├── tasks/           # Lógica de tarefas (CRUD)
-├── users/           # Lógica de usuários (CRUD)
-├── prisma/          # Integração com o Prisma ORM
-├── app.module.ts    # Módulo principal
-└── main.ts          # Ponto de entrada
+backend/src/projetostack/
+├── dist/                     # Arquivos compilados (JavaScript)
+├── node_modules/             # Dependências do projeto (npm)
+├── prisma/                   # Integração com o Prisma ORM
+│   └── (conteúdo específico do Prisma)
+├── src/                      # Código fonte da aplicação
+│   ├── auth/                 # Lógica de autenticação (JWT)
+│   │   ├── auth.controller.ts
+│   │   ├── auth.service.ts
+│   │   └── auth.module.ts
+│   │
+│   ├── Dto/                  # Data Transfer Objects (DTOs)
+│   │   └── (DTOs específicos)
+│   │
+│   ├── tasks/                # Lógica de tarefas (CRUD)
+│   │   ├── tasks.controller.ts
+│   │   ├── tasks.service.ts
+│   │   └── tasks.module.ts
+│   │
+│   ├── users/                # Lógica de usuários (CRUD)
+│   │   ├── users.controller.ts
+│   │   ├── users.service.ts
+│   │   └── users.module.ts
+│   │
+│   ├── app.controller.spec.ts # Testes do controlador principal
+│   ├── app.controller.ts      # Controlador principal
+│   ├── app.module.ts          # Módulo principal
+│   ├── app.service.ts         # Serviço principal
+│   ├── main.ts                # Ponto de entrada
+│   └── request.interface.ts   # Definições de interface para requisições
+│
+├── test/                     # Testes da aplicação
+├── .env                      # Variáveis de ambiente
+├── .gitignore                # Arquivos e pastas ignorados pelo Git
+├── .prettierrc               # Configurações do Prettier
+├── eslint.config.mjs          # Configurações do Eslint
+├── nest-cli.json             # Configurações da CLI do NestJS
+├── package-lock.json         # Gerenciado pelo npm (dependências fixas)
+├── package.json              # Informações e dependências do projeto
+├── README.md                 # Documentação do projeto
+├── tsconfig.build.json       # Configurações do TypeScript para o build
+└── tsconfig.json             # Configurações do TypeScript
  ```
 
 Frontend
 ```bash
+Claro, vamos analisar a estrutura de pastas e arquivos desse projeto, que parece ser um projeto React com TypeScript e Vite.
+
+Estrutura Completa de Pastas e Arquivos:
+
 src/
-├── components/      # Componentes React
-├── pages/           # Páginas da aplicação
-├── services/        # Serviços para comunicação com a API
-├── App.tsx          # Componente principal
-└── index.tsx        # Ponto de entrada
+├── assets/             # Recursos estáticos (imagens, ícones, etc.)
+├── components/         # Componentes reutilizáveis
+├── context/            # Contextos do React para gerenciamento de estado global
+├── hooks/              # Hooks personalizados
+├── models/             # Definições de tipos e interfaces
+├── pages/              # Páginas da aplicação
+├── Utils/              # Funções utilitárias
+├── App.css             # Estilos globais do componente App
+├── App.tsx             # Componente App principal
+├── index.css           # Estilos globais da aplicação
+├── main.tsx            # Ponto de entrada da aplicação
+├── vite-env.d.ts       # Definições de tipos para o Vite
+├── .gitignore          # Arquivos e pastas ignorados pelo Git
+├── eslint.config.js    # Configurações do ESLint
+├── index.html          # Arquivo HTML principal
+├── package-lock.json   # Gerenciado pelo npm (dependências fixas)
+├── package.json        # Informações e dependências do projeto
+├── README.md           # Documentação do projeto
+├── rest.http           # Arquivo para testes de API com REST Client (VS Code)
+├── tsconfig.app.json   # Configurações do TypeScript para a aplicação
+├── tsconfig.json       # Configurações do TypeScript
+├── tsconfig.node.json  # Configurações do TypeScript para o Node.js
+└── vite.config.ts     # Configurações do Vite
  ```
 
 Como Contribuir   
