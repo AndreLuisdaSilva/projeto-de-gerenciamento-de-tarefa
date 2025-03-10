@@ -70,7 +70,7 @@ npm install
 Configure a URL da API no arquivo .env:
 
 ```bash
-VITE_API_URL=[http://localhost:3000](http://localhost:5173)
+VITE_API_URL=http://localhost:5173
  ```
 ## 3. Inicie o servidor de desenvolvimento:
 
