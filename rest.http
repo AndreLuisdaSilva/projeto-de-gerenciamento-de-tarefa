@@ -1,0 +1,26 @@
+POST http://localhost:3000/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Nova Tarefa5",
+  "status": true
+}
+###
+GET http://localhost:3000/tasks HTTP/1.1
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/tasks/3 HTTP/1.1
+
+
+### 
+GET http://localhost:3000/tasks/2 HTTP/1.1
+Content-Type: application/json
+
+###
+PATCH http://localhost:3000/tasks/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Nova Tarefa5"
+}
